@@ -5,11 +5,19 @@ import App from './App';
 import { store } from './app/store';
 import { Provider } from 'react-redux';
 import * as serviceWorker from './serviceWorker';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Login } from './features/login/Login';
+import { Task } from './features/task/Task';
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/tasks" element={<Task />}></Route>
+        </Routes>
+      </BrowserRouter>
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')

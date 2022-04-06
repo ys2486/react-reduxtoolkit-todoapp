@@ -38,5 +38,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@material-ui/core": "^4.12.3",
+    "axios": "^0.26.1",
+    "react-icons": "^4.3.1",
+    "react-router-dom": "^6.2.2"
   }
 }
